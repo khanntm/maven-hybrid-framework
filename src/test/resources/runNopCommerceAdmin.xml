@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce - Admin">
+
+<listeners>
+	<listener class-name="commons.MethodListener" />
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+
+<parameter name="url" value="https://demo.nopcommerce.com/" />
+
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="chrome" > </parameter>
+    <classes>
+      <class name="com.nopcommerce.user.Level_08_Switch_Role"/>
+       </classes>
+  </test>
+</suite> 

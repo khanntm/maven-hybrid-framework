@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+
+<listeners>
+	<listener class-name="commons.MethodListener" />
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+
+<parameter name="url" value="https://www.facebook.com/" />
+
+   <test name="Run on Firefox">
+  	<parameter name="browser" value="FIREFOX" > </parameter>
+  	  <classes>
+      <class name="com.facebook.register.Level_13_Element_Undisplay"/>
+       </classes>
+  </test>
+</suite> 
